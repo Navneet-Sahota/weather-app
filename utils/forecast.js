@@ -5,7 +5,7 @@ const forecast = (lat, long, callback) => {
 		lat
 	)},${encodeURIComponent(long)}?units=si`;
 
-	request({ url, json: true }, (err, response, body) => {
+	request({ url, json: true }, (err, { body }) => {
 		if (err) {
 			callback("Unable to connect to weather service", null);
 		} else if (body.error) {
