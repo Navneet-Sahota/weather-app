@@ -12,5 +12,8 @@
     "temperature"
   ],
   "author": "Navneet Sahota",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }
